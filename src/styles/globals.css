@@ -15,13 +15,63 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow: hidden;
+}
+.cls-1 {
+  fill: #edeae6;
+}
+.cls-2 {
+  fill: #715947;
+}
+.cls-3 {
+  fill: #7a5f4c;
+}
+.cls-4 {
+  fill: #493e37;
+}
+.cls-5 {
+  fill: #37291d;
+}
+.cls-6 {
+  fill: #302317;
+}
+.cls-7 {
+  fill: #e6b0b2;
+}
+.cls-8 {
+  fill: #fffeef;
+}
+.cls-9 {
+  fill: #5e4838;
+}
+.clsb-1 {
+  fill: #edeae6;
+}
+.clsb-2 {
+  fill: #fff;
+}
+.clsb-3 {
+  fill: #493e37;
+}
+.clsb-4 {
+  fill: #37291d;
+}
+.clsb-5 {
+  fill: #302317;
+}
+.clsb-6 {
+  fill: #e6b0b2;
+}
+.clsb-7 {
+  fill: #fffeef;
+}
+.clsb-8 {
+  fill: #5e4838;
+}
+.st0 {
+  fill: #5865f2;
+}
+.st1 {
+  fill: #ffffff;
 }
