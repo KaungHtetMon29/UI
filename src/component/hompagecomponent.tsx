@@ -42,7 +42,7 @@ export default function Homepage() {
           <Opensea />
         </div>
       </div>
-      <div className="bg-blue-900 fixed z-[999] lg:p-10 p-36 text-white lg:text-3xl text-[120px] lg:rounded-l-3xl rounded-[5rem] bottom-0 right-0">
+      <div className="bg-blue-900 fixed z-[999] lg:p-10 md:p-36 p-24 text-white lg:text-3xl text-[60px] lg:rounded-l-3xl rounded-l-[5rem] bottom-0 right-0">
         <p>View Collection</p>
       </div>
       <div className="relative">
