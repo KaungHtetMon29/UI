@@ -46,9 +46,9 @@ export default function Homepage() {
         <p>View Collection</p>
       </div>
       <div className="relative">
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -76,9 +76,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -106,9 +106,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -136,9 +136,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -166,9 +166,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -196,9 +196,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -226,9 +226,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -256,9 +256,9 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 10 }).map((_, index1) => (
+        {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 3 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
