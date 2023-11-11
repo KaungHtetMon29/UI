@@ -48,7 +48,7 @@ export default function Homepage() {
       <div className="relative">
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -68,9 +68,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -78,7 +78,7 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
@@ -98,9 +98,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -108,11 +108,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 150 * index - 450}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 200 * index - 450}px`, // Adjusted the left calculation
                   top: `${450 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -128,9 +128,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -138,11 +138,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 150 * index - 450}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 200 * index - 450}px`, // Adjusted the left calculation
                   top: `${450 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -158,9 +158,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -168,11 +168,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 150 * index - 450}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 200 * index - 450}px`, // Adjusted the left calculation
                   top: `${900 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -188,9 +188,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -198,11 +198,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 150 * index - 450}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 200 * index - 450}px`, // Adjusted the left calculation
                   top: `${1350 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -218,9 +218,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -228,11 +228,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 150 * index - 450}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 200 * index - 450}px`, // Adjusted the left calculation
                   top: `${1800 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -248,9 +248,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -258,11 +258,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 6 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 3 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 150 * index - 450}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 200 * index - 450}px`, // Adjusted the left calculation
                   top: `${2200 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -278,9 +278,9 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat2 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat2 className="lg:h-[80vh] h-[230vh]" />
                 ) : (
-                  <Cat1 className="lg:h-[80vh] h-[120vh]" />
+                  <Cat1 className="lg:h-[80vh] h-[230vh]" />
                 )}
               </motion.div>
             ))}
@@ -299,7 +299,7 @@ export default function Homepage() {
             variants={variant}
             animate="animate"
           >
-            <Cat1 className="lg:h-[80vh] h-[120vh]" />
+            <Cat1 className="lg:h-[80vh] h-[230vh]" />
           </motion.div>
         ) : (
           <motion.div
@@ -311,7 +311,7 @@ export default function Homepage() {
             variants={variant2}
             animate="animate"
           >
-            <Cat1 className="lg:h-[80vh] h-[120vh]" />
+            <Cat1 className="lg:h-[80vh] h-[230vh]" />
           </motion.div>
         )
       )} */}
