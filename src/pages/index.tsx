@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
-
+import { motion, AnimatePresence } from "framer-motion";
 import Homepage from "@/component/hompagecomponent";
 import Secpage from "@/component/secondpagecomponent";
 import Thirdpage from "@/component/thirdpage";
@@ -33,8 +33,9 @@ export default function Home() {
     console.log(Math.floor(scrollY / 90));
   }, [scrollY]);
   return (
-    <div
-      className="w-full relative flex"
+    <motion.div
+      key="main"
+      className="w-full relative "
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -43,11 +44,17 @@ export default function Home() {
         setScrollY(scrollvalue);
       }}
     >
-      {Math.floor(scrollY / 90) <= 1 && <Homepage />}
-      {Math.floor(scrollY / 90) > 1 && Math.floor(scrollY / 90) <= 3 && (
-        <Secpage />
-      )}
-      {Math.floor(scrollY / 90) >= 4 && <Thirdpage />}
-    </div>
+      <AnimatePresence>
+        {Math.floor(scrollY / 90) <= 1 && <Homepage key={"Homepage"} />}
+      </AnimatePresence>
+      <AnimatePresence>
+        {Math.floor(scrollY / 90) > 1 && Math.floor(scrollY / 90) <= 3 && (
+          <Secpage key="secpage" />
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {Math.floor(scrollY / 90) >= 4 && <Thirdpage key="thirdpage" />}
+      </AnimatePresence>
+    </motion.div>
   );
 }

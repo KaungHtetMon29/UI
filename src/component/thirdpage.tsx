@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import { Cat1, Discord, Opensea, Twitter } from "@/assets/cat";
 function Thirdpage() {
   return (
-    <div className="bg-orange-200 w-full relative flex">
+    <motion.div
+      className="bg-orange-200 w-full relative flex"
+      initial={{ y: -1000 }}
+      animate={{ y: 0 }}
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+    >
       <div className="z-[999] mx-auto tracking-wider lg:text-lg md:text-lg text-xs text-start lg:w-1/3 md:w-1/2 w-10/12 font-bold absolute inset-0 my-0 h-full left-0 right-0 md:top-[22rem] top-[14rem] bottom-0 justify-center items-center flex text-blue-700">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
         totam nisi ad ducimus.Lorem ipsum dolor sit amet consectetur adipisicing
@@ -19,7 +24,7 @@ function Thirdpage() {
         <Cat1 className="md:w-[30rem] md:h-[30rem] w-[15rem] h-[15rem]" />
       </motion.div>
       <Bg />
-    </div>
+    </motion.div>
   );
 }
 
