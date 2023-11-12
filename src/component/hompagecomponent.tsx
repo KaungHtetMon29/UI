@@ -27,29 +27,15 @@ export default function Homepage() {
     },
   };
   return (
-    <div className="relative w-full">
-      <div className="flex fixed gap-4 bottom-0 z-[999] p-8">
-        <div className="lg:w-10 md:w-40 w-40">
-          <Discord />
-        </div>
-        <div className="lg:w-10 md:w-40  w-40">
-          <Twitter />
-        </div>
-        <div className="lg:w-10 md:w-40 w-40">
-          <Opensea />
-        </div>
-      </div>
-      <div className="bg-blue-900 fixed z-[999] lg:p-10 md:p-36 p-24 text-white lg:text-3xl text-[60px] lg:rounded-l-3xl rounded-l-[5rem] bottom-0 right-0">
-        <p>View Collection</p>
-      </div>
+    <div className="relative w-full min-h-[200vh] min-w-[100vw] overflow-hidden">
       <div className="relative">
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${-900 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -75,11 +61,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${-450 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -105,11 +91,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${-150 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -135,11 +121,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${450 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -163,13 +149,13 @@ export default function Homepage() {
             ))}
           </div>
         ))}
-        {Array.from({ length: 1 }).map((_, index1) => (
+        {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${900 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -192,14 +178,14 @@ export default function Homepage() {
               </motion.div>
             ))}
           </div>
-        ))}
-        {Array.from({ length: 1 }).map((_, index1) => (
+        ))} */}
+        {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${1700 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -222,14 +208,14 @@ export default function Homepage() {
               </motion.div>
             ))}
           </div>
-        ))}
-        {Array.from({ length: 1 }).map((_, index1) => (
+        ))} */}
+        {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${1800 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -252,14 +238,14 @@ export default function Homepage() {
               </motion.div>
             ))}
           </div>
-        ))}
-        {Array.from({ length: 1 }).map((_, index1) => (
+        ))} */}
+        {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${2200 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -282,14 +268,14 @@ export default function Homepage() {
               </motion.div>
             ))}
           </div>
-        ))}
-        {Array.from({ length: 1 }).map((_, index1) => (
+        ))} */}
+        {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 700 * index - 1000}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
                   top: `${2650 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -312,7 +298,7 @@ export default function Homepage() {
               </motion.div>
             ))}
           </div>
-        ))}
+        ))} */}
       </div>
 
       {/* {Array.from({ length: 20 }).map((e, index) =>

@@ -2,8 +2,8 @@ import { Discord, Opensea, Twitter } from "@/assets/cat";
 
 export default function Nav(props: { children: React.ReactNode }) {
   return (
-    <div className="relative w-full">
-      <h1 className="z-[999] lg:text-[4rem] text-[130px] text-white font-bold h-full fixed w-full p-8">
+    <div className="relative w-full ">
+      <h1 className="z-[999] lg:text-[4rem] text-[20px] text-white font-bold w-fit fixed h-fit p-8">
         Fluffy Hugs
       </h1>
       <div className="flex fixed sm:gap-4 gap-2 bottom-0 z-[999] p-8">
