@@ -5,6 +5,8 @@ import { Cat1 } from "@/assets/cat";
 import { motion } from "framer-motion";
 import { easeInOut } from "framer-motion/dom";
 import Homepage from "@/component/hompagecomponent";
+import Secpage from "@/component/secondpagecomponent";
+import Thirdpage from "@/component/thirdpage";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,8 @@ export default function Home() {
         scrollfunc(setscroll, scrollY, scroll, setScrollY);
       }}
     >
+      {/* <Thirdpage /> */}
+      {/* <Secpage /> */}
       <Homepage />
     </div>
   );
