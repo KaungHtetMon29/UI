@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import { Cat1, Cat2, Discord, Opensea, Twitter } from "@/assets/cat";
+import cat1 from "@/assets/cat1.png";
+import cat2 from "@/assets/cat2.png";
 import { motion } from "framer-motion";
 import { easeInOut } from "framer-motion/dom";
 
@@ -31,11 +33,11 @@ export default function Homepage() {
       <div className="relative">
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${-900 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -51,9 +53,31 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat1}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
                 ) : (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat2}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -61,11 +85,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${-450 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -81,9 +105,31 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat1}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
                 ) : (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat2}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -91,11 +137,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${-150 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -111,9 +157,31 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat1}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
                 ) : (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat2}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -121,11 +189,11 @@ export default function Homepage() {
         ))}
         {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${450 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -141,9 +209,31 @@ export default function Homepage() {
                 animate="animate"
               >
                 {index % 2 ? (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat1}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
                 ) : (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
+                  <Image
+                    style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                    }}
+                    src={cat2}
+                    alt="cats"
+                    width={1000}
+                    height={1000}
+                    objectFit="cover"
+                  />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -151,11 +241,11 @@ export default function Homepage() {
         ))}
         {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${900 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -170,10 +260,14 @@ export default function Homepage() {
                 }
                 animate="animate"
               >
-                {index % 2 ? (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                {index % 2 ? (<Image style={{
+                    
+                    width: '100%',
+                    height: '100%',
+                  }} src={} alt="cats"/>
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 ) : (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -181,11 +275,11 @@ export default function Homepage() {
         ))} */}
         {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${1700 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -200,10 +294,14 @@ export default function Homepage() {
                 }
                 animate="animate"
               >
-                {index % 2 ? (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                {index % 2 ? (<Image style={{
+                    
+                    width: '100%',
+                    height: '100%',
+                  }} src={} alt="cats"/>
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 ) : (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -211,11 +309,11 @@ export default function Homepage() {
         ))} */}
         {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${1800 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -230,10 +328,14 @@ export default function Homepage() {
                 }
                 animate="animate"
               >
-                {index % 2 ? (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                {index % 2 ? (<Image style={{
+                    
+                    width: '100%',
+                    height: '100%',
+                  }} src={} alt="cats"/>
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 ) : (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -241,11 +343,11 @@ export default function Homepage() {
         ))} */}
         {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${2200 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -260,10 +362,14 @@ export default function Homepage() {
                 }
                 animate="animate"
               >
-                {index % 2 ? (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                {index % 2 ? (<Image style={{
+                    
+                    width: '100%',
+                    height: '100%',
+                  }} src={} alt="cats"/>
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 ) : (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -271,11 +377,11 @@ export default function Homepage() {
         ))} */}
         {/* {Array.from({ length: 1 }).map((_, index1) => (
           <div key={index1} className="relative">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 style={{
-                  left: `${index1 * 200 + 600 * index - 700}px`, // Adjusted the left calculation
+                  left: `${index1 * 200 + 600 * index - 300}px`, // Adjusted the left calculation
                   top: `${2650 + 150 * index}px`,
                 }}
                 className={`absolute z-[${index1}]`}
@@ -290,10 +396,14 @@ export default function Homepage() {
                 }
                 animate="animate"
               >
-                {index % 2 ? (
-                  <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                {index % 2 ? (<Image style={{
+                    
+                    width: '100%',
+                    height: '100%',
+                  }} src={} alt="cats"/>
+                  // <Cat2 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 ) : (
-                  <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+                  // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
                 )}
               </motion.div>
             ))}
@@ -302,7 +412,11 @@ export default function Homepage() {
       </div>
 
       {/* {Array.from({ length: 20 }).map((e, index) =>
-        index % 2 === 0 ? (
+        index % 2 === 0 ? (<Image style={{
+                    
+                    width: '100%',
+                    height: '100%',
+                  }} src={} alt="cats"/>
           <motion.div
             style={{
               left: `${-150 + 150 * index}px`,
@@ -312,7 +426,7 @@ export default function Homepage() {
             variants={variant}
             animate="animate"
           >
-            <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+            // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
           </motion.div>
         ) : (
           <motion.div
@@ -324,7 +438,7 @@ export default function Homepage() {
             variants={variant2}
             animate="animate"
           >
-            <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[200vh]" />
+            // <Cat1 className="xl:h-[200vh] lg:h-[200vh] md:h-[200vh] h-[140vh]" />
           </motion.div>
         )
       )} */}
