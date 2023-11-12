@@ -28,7 +28,7 @@ export const Bg = () => {
   return (
     <div className="flex flex-col flex-shrink-0 gap-96 bg-orange-200  z-50 fixed">
       {Array.from({ length: 6 }).map((_, index) => (
-        <div className="overflow-hidden">
+        <div key={index} className="overflow-hidden">
           <motion.div
             className="flex gap-12"
             animate={{ x: [0, -295] }}
